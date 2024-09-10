@@ -1,5 +1,3 @@
-
-
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
@@ -81,12 +79,14 @@ function mostraPergunta() {
   perguntaAtual = perguntas[atual];
   caixaPerguntas.textContent = perguntaAtual.enunciado;
 }
-function mostraAlerternativas(){
-  for(constalternativa of perguntaAtual.alternativas){
-      const botaoAlternativas = document.creatElement("button");
-   botaAlternativa.texContent=alternativa.texto; botaoAlternativas.addEvenrListener("click", function() {});
-      caixaAlternativa.appendChild(botaoAlternativa);
-  }
+
+function mostraAlternativas() {
+    for(contsalternativa of perguntaAtual.alternativas) {
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.TextContent = caixaAlternativas.texto;
+        botaoAlternativas.addEventlistener("click", function() {});
+        caixaAlternativas.appendChild(botaoAlternativa);
     }
+}
 
 mostraPergunta();
